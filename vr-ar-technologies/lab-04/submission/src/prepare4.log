@@ -1,0 +1,50 @@
+Unity Editor version:    6000.6.10f1 (40e81493c67d)
+Branch:                  6000.6/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.6.2 (Build 25G83)
+Darwin version:          25.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        32768 MB
+Date:                    2026-11-23T15:28:55Z
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 77150)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 77152)
+VBCSCompiler prewarm took 4.47 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mac" at "2026-11-23T15:28:55.42154Z"
+Launching external process: /Applications/Unity/Hub/Editor/6000.6.10f1/Unity.app/Contents/Helpers/PackageManager/Server/UnityPackageManager
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.6.10f1/Unity.app/Contents/MacOS/Unity
+-batchmode
+-quit
+-projectPath
+submission/AR_Lab4
+-buildTarget
+Android
+-executeMethod
+SceneBuilder.PrepareOnly
+-logFile
+src/prepare4.log
+Couldn't set project path to: 
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 1
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.19.0+4cc3dda
+  Session Id:              0c9fcb882bda4106b1df86de44344780
+  Correlation Id:          a9759a8440bfba2a463f87fa08304be2
+  External correlation Id: 7652844692895354781
+  Machine Id:              pNjqXMoC7PaAhCuH/HIiyHB6guI=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mac" (connect: 0.00s, validation: 0.00s, handshake: 0.14s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mac-notifications" at "2026-11-23T15:28:55.567965Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 7972654189088-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.16s
+[Package Manager] Server process was shutdown

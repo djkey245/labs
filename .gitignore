@@ -52,3 +52,17 @@ vr-ar-technologies/lab-*/submission/AR_Lab3/*.slnx
 vr-ar-technologies/lab-*/submission/AR_Lab3/*.sln
 vr-ar-technologies/lab-*/submission/AR_Lab3/Assets/Resources/VuforiaConfiguration.asset*
 vr-ar-technologies/lab-*/submission/AR_Lab3/QCAR/
+# --- vr-ar-technologies / lab-04 ---
+vr-ar-technologies/lab-*/submission/AR_Lab4/Vuforia/*.tgz
+vr-ar-technologies/lab-*/submission/AR_Lab4/Library/
+vr-ar-technologies/lab-*/submission/AR_Lab4/Temp/
+vr-ar-technologies/lab-*/submission/AR_Lab4/Logs/
+vr-ar-technologies/lab-*/submission/AR_Lab4/UserSettings/
+vr-ar-technologies/lab-*/submission/AR_Lab4/obj/
+vr-ar-technologies/lab-*/submission/AR_Lab4/.utmp/
+vr-ar-technologies/lab-*/submission/AR_Lab4/.vscode/
+vr-ar-technologies/lab-*/submission/AR_Lab4/*.csproj
+vr-ar-technologies/lab-*/submission/AR_Lab4/*.slnx
+vr-ar-technologies/lab-*/submission/AR_Lab4/*.sln
+vr-ar-technologies/lab-*/submission/AR_Lab4/Assets/Resources/VuforiaConfiguration.asset*
+vr-ar-technologies/lab-*/submission/AR_Lab4/QCAR/
