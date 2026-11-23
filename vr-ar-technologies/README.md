@@ -10,7 +10,8 @@
 | Лаба | Тема | Статус |
 |------|------|--------|
 | [lab-01](lab-01/) | Unity + Vuforia, Image Targets (AR) | APK зібрано; AR перевірено в Play Mode з вебкамерою (скріни в `submission/media/`); звіт `submission/report.md` написано — лишилось вписати ПІБ і лінк на репозиторій та здати. На Android не запускали (немає телефона) |
-| [lab-02](lab-02/) | AR Mobile Template (AR Foundation, XR Simulation) | умову зібрано |
+| [lab-02](lab-02/) | AR Mobile Template (AR Foundation, XR Simulation) | Проєкт за шаблоном AR Mobile, Android-налаштування, APK зібрано, XR Simulation у Play Mode (скріни в `submission/media/`); звіт `submission/report.md` написано. На Android не запускали |
+| [lab-03](lab-03/) | Vuforia Cylinder Target | `task.md` і `plan.md` готові; чекаємо базу з Target Manager |
 
 ## Як відкрити проєкт ЛР1
 
@@ -18,3 +19,9 @@
 2. Пакет Vuforia Engine 11.4.4 не зберігається в репозиторії (власницький SDK, понад 100 МБ): завантажити `add-vuforia-package-11-x.unitypackage` з developer.vuforia.com, дістати з нього `com.ptc.vuforia.engine-11.4.4.tgz` і покласти в `lab-01/submission/AR_Lab1/Vuforia/`.
 3. Власний ліцензійний ключ Vuforia вписати в `Window → Vuforia Engine → Configuration → App License Key`.
 4. Звіт: `lab-01/submission/report.md`, готовий `.apk`: `lab-01/submission/build/AR_Lab1.apk`.
+
+## Як відкрити проєкт ЛР2
+
+1. Unity Hub → Add → `lab-02/submission/Kovalchuk_AR_Project`, редактор Unity 6000.6.10f1 (Android Build Support). Пакети (AR Foundation тощо) підтягнуться з реєстру Unity.
+2. Сцени: `Assets/Scenes/AR Template Scene.unity` (з шаблону) і `Manual AR Scene.unity` (AR Session + XR Origin вручну).
+3. Звіт: `lab-02/submission/report.md`, готовий `.apk`: `lab-02/submission/build/Kovalchuk_AR_Project.apk`.

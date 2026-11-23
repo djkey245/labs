@@ -28,3 +28,14 @@ vr-ar-technologies/lab-*/submission/AR_Lab1/*.csproj
 vr-ar-technologies/lab-*/submission/AR_Lab1/*.slnx
 vr-ar-technologies/lab-*/submission/AR_Lab1/*.sln
 vr-ar-technologies/lab-*/submission/AR_Lab1/QCAR/
+# --- vr-ar-technologies / lab-02 ---
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/Library/
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/Temp/
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/Logs/
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/UserSettings/
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/obj/
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/.vscode/
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/*.csproj
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/*.slnx
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/*.sln
+vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/build/
