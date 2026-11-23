@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Робочі файли Claude Code (не здаються)
+.claude/
+CLAUDE.md
+
+# Предмети, яких ще немає в репозиторії
+big-data-processing/
+
+# --- vr-ar-technologies ---
+# ліцензійний ключ Vuforia
+vr-ar-technologies/vuforia_license.txt
+vr-ar-technologies/lab-*/submission/AR_Lab1/Assets/Resources/VuforiaConfiguration.asset*
+# завантажені матеріали викладача й сторонні файли
+vr-ar-technologies/lab-*/src/
+# пакет Vuforia (власницький SDK, >100 МБ) — завантажити з developer.vuforia.com
+vr-ar-technologies/lab-*/submission/AR_Lab1/Vuforia/*.tgz
+# згенероване Unity
+vr-ar-technologies/lab-*/submission/AR_Lab1/Library/
+vr-ar-technologies/lab-*/submission/AR_Lab1/Temp/
+vr-ar-technologies/lab-*/submission/AR_Lab1/Logs/
+vr-ar-technologies/lab-*/submission/AR_Lab1/UserSettings/
+vr-ar-technologies/lab-*/submission/AR_Lab1/build/
+vr-ar-technologies/lab-*/submission/AR_Lab1/.utmp/
+vr-ar-technologies/lab-*/submission/AR_Lab1/.vscode/
+vr-ar-technologies/lab-*/submission/AR_Lab1/*.csproj
+vr-ar-technologies/lab-*/submission/AR_Lab1/*.slnx
+vr-ar-technologies/lab-*/submission/AR_Lab1/*.sln
+vr-ar-technologies/lab-*/submission/AR_Lab1/QCAR/
