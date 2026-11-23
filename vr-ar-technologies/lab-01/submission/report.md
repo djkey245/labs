@@ -32,13 +32,11 @@
 
 Купюра 100 грн розпізнається, поверх неї відображається купюра 1000 грн:
 
-![uah100 → 1000 грн](media/play-uah100-1.png)
-
-![uah100 → 1000 грн, інший кадр](media/play-uah100-2.png)
+![uah100 → 1000 грн](media/uah100-to-1000.png)
 
 Маркер `stones` розпізнається, на ньому з'являється модель Robot Kyle:
 
-![stones → Robot Kyle](media/play-stones-1.png)
+![stones → Robot Kyle](media/stones-robot-kyle.png)
 
 Зібраний застосунок: [`build/AR_Lab1.apk`](build/AR_Lab1.apk).
 
