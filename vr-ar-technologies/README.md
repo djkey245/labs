@@ -11,7 +11,7 @@
 |------|------|--------|
 | [lab-01](lab-01/) | Unity + Vuforia, Image Targets (AR) | APK зібрано; AR перевірено в Play Mode з вебкамерою (скріни в `submission/media/`); звіт `submission/report.md` написано — лишилось вписати ПІБ і лінк на репозиторій та здати. На Android не запускали (немає телефона) |
 | [lab-02](lab-02/) | AR Mobile Template (AR Foundation, XR Simulation) | Проєкт за шаблоном AR Mobile, Android-налаштування, APK зібрано, XR Simulation у Play Mode (скріни в `submission/media/`); звіт `submission/report.md` написано. На Android не запускали |
-| [lab-03](lab-03/) | Vuforia Cylinder Target | `task.md` і `plan.md` готові; чекаємо базу з Target Manager |
+| [lab-03](lab-03/) | Vuforia Cylinder Target | База з Target Manager імпортована, сцена з трьома цілями (картинка, балон, труба з листівки) + Robot Kyle, APK зібрано (`submission/build/AR_Lab3.apk`, minSdk 29). Розпізнавання перевірено в Play Mode з вебкамерою (`cylinder_target` з екрана телефона, `can_target` — реальний балон, `card_target` — труба з листівки, усі `TRACKED`; скріни в `submission/media/`). На Android не запускали |
 
 ## Як відкрити проєкт ЛР1
 
@@ -25,3 +25,10 @@
 1. Unity Hub → Add → `lab-02/submission/Kovalchuk_AR_Project`, редактор Unity 6000.6.10f1 (Android Build Support). Пакети (AR Foundation тощо) підтягнуться з реєстру Unity.
 2. Сцени: `Assets/Scenes/AR Template Scene.unity` (з шаблону) і `Manual AR Scene.unity` (AR Session + XR Origin вручну).
 3. Звіт: `lab-02/submission/report.md`, готовий `.apk`: `lab-02/submission/build/Kovalchuk_AR_Project.apk`.
+
+## Як відкрити проєкт ЛР3
+
+1. Unity Hub → Add → `lab-03/submission/AR_Lab3`, редактор Unity 6000.6.10f1 (Android Build Support).
+2. Пакет Vuforia Engine 11.4.4 (`com.ptc.vuforia.engine-11.4.4.tgz`) лежить у `lab-03/submission/AR_Lab3/Vuforia/` (як у ЛР1). База цілі: `Assets/StreamingAssets/Vuforia/AR_VF_CylinderDB.{dat,xml}`.
+3. Власний ліцензійний ключ Vuforia вписати в `Window → Vuforia Engine → Configuration → App License Key` (або покласти `vuforia_license.txt` у цю папку й виконати `AR Lab → Build Scene` / `SceneBuilder.BuildAll`).
+4. Сцена `Assets/Scenes/Main.unity` будується скриптом `Assets/Editor/SceneBuilder.cs`. Звіт: `lab-03/submission/report.md`, готовий `.apk`: `lab-03/submission/build/AR_Lab3.apk`.

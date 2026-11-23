@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VuforiaUnityInfo version="7.0">
+    <TargetSet version="5.0" toolVersion="2.8.1">
+        <CylinderTarget name="card_target" version="3.0" targetId="e2bead7dfad34fb89fe3c3a3e097464a" sideLength="0.180000" topDiameter="0.040000" bottomDiameter="0.040000" sideImage="card_target.Body_scaled.jpg"/>
+        <CylinderTarget name="can_target" version="3.0" targetId="e031f08a50b548dead76cba02a57dde0" sideLength="0.120000" topDiameter="0.040000" bottomDiameter="0.040000" sideImage="can_target.Body_scaled.jpg"/>
+        <CylinderTarget name="cylinder_target" version="3.0" targetId="ed62d90118c74ae8b6d71399f977fcdd" sideLength="0.100000" topDiameter="0.048000" bottomDiameter="0.048000" sideImage="cylinder_target.Body_scaled.jpg"/>
+    </TargetSet>
+</VuforiaUnityInfo>

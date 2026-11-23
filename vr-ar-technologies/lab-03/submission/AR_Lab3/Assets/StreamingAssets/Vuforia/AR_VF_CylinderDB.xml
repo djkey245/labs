@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <CylinderTarget name="card_target" sideLength="0.180000"/>
+    <CylinderTarget name="can_target" sideLength="0.120000"/>
+    <CylinderTarget name="cylinder_target" sideLength="0.100000"/>
+  </Tracking>
+</QCARConfig>

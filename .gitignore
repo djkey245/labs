@@ -39,3 +39,16 @@ vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/*.csproj
 vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/*.slnx
 vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/*.sln
 vr-ar-technologies/lab-*/submission/Kovalchuk_AR_Project/build/
+# --- vr-ar-technologies / lab-03 ---
+vr-ar-technologies/lab-*/submission/AR_Lab3/Vuforia/*.tgz
+vr-ar-technologies/lab-*/submission/AR_Lab3/Library/
+vr-ar-technologies/lab-*/submission/AR_Lab3/Temp/
+vr-ar-technologies/lab-*/submission/AR_Lab3/Logs/
+vr-ar-technologies/lab-*/submission/AR_Lab3/UserSettings/
+vr-ar-technologies/lab-*/submission/AR_Lab3/.utmp/
+vr-ar-technologies/lab-*/submission/AR_Lab3/.vscode/
+vr-ar-technologies/lab-*/submission/AR_Lab3/*.csproj
+vr-ar-technologies/lab-*/submission/AR_Lab3/*.slnx
+vr-ar-technologies/lab-*/submission/AR_Lab3/*.sln
+vr-ar-technologies/lab-*/submission/AR_Lab3/Assets/Resources/VuforiaConfiguration.asset*
+vr-ar-technologies/lab-*/submission/AR_Lab3/QCAR/

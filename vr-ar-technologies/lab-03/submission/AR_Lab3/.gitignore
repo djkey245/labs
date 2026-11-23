@@ -1,0 +1,17 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+*.csproj
+*.sln
+*.slnx
+*.pidb.meta
+.vscode/
+.vs/
+.idea/
+# Vuforia license key must never be committed
+vuforia_license.txt
+Assets/Resources/VuforiaConfiguration.asset*
