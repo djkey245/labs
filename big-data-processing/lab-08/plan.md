@@ -1,0 +1,10 @@
+# План ЛР8
+Папка lab-08/. Запуск з submission/. Код завдань 1–8 і розділу 4 — з task.txt дослівно (set.seed(123)).
+1. submission/lab08.R (копія в src/): 
+   - Завд.1–8 + розділ 4 за методичкою; графіки зберігати PNG (plots/): 01_scatter_hours_score, 02_scatter_attendance_score, 03_scatter_stress_score (base plot з abline, як у методичці), 04_heatmap_pearson, 05_heatmap_spearman (corrplot), 06_heatmap_pearson_p_adjusted не потрібно. Кирилиця в PNG: як у lab-05/src/lab05.R (шрифт "Arial Unicode MS", перевір візуально, що підписи не «квадрати»).
+   - Додатково: таблиця унікальних пар (10 пар): r Пірсона, p сирий, p BH, rho Спірмена, p Спірмена, чи значущі до/після корекції, словесний опис describe_correlation. Експорт у results/pairs_table.csv.
+   - Розділ 5: у скрипті надрукуй відповіді-дані для 6 питань (найсильніший додатний зв'язок зі Score, від'ємний зв'язок, різниця Пірсон/Спірмен, значущість до/після BH, пропуски).
+   - Індивідуальне завдання: варіант 6 — призначено, «Відвідуваність — пропуски занять, активність, оцінки» (set.seed(2025), n=120; Absences 0–20, Activity 0–10, Grade 0–100; помірні зв'язки, пара Absences–Grade монотонна нелінійна; Пірсон+Спірмен+cor.test+BH, 2 heatmap → plots/07_att_heatmap_pearson.png, 08_att_heatmap_spearman.png, scatter 09_att_scatter.png; дані submission/data/attendance_students.csv). Дані синтетичні — прямо вказати у звіті.
+   - Запуск: cd submission && Rscript lab08.R > results/console_output.txt 2>&1. Rplots.pdf видалити. Збережи також data/students.csv.
+2. src/build_report.py (python-docx, .venv/bin/python; стиль lab-05) → submission/Lab08_Kovalchuk.docx за п.8: тема/мета/теорія; код з коментарями (ключові фрагменти); опис даних; Пірсон/Спірмен; значущість; матриці і 2 heatmap; порівняння сирих і BH-скоригованих p (таблиця); пропуски (complete vs pairwise, різниця чисел); підсумковий аналіз (6 питань — тільки реальні числа); індивідуальне завдання; 15 контрольних відповідей (2–4 речення); висновки. Автор: Ковальчук Дмитро Олексійович, ПІ-23. Числа з console_output.txt, нічого не вигадувати.
+Перевірка: R без помилок, docx ≥ 8 рисунків, числа збігаються.

@@ -1,0 +1,40 @@
+
+Options: -K 5 
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 5 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.33 seconds
+
+Time taken to perform cross-validation: 0.47 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        1666               55.5333 %
+Incorrectly Classified Instances      1334               44.4667 %
+Kappa statistic                          0.1089
+Mean absolute error                      0.4716
+Root mean squared error                  0.5279
+Relative absolute error                 94.3543 %
+Root relative squared error            105.6005 %
+Total Number of Instances             3000     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,612    0,504    0,557      0,612    0,583      0,109    0,569     0,564     1
+                 0,496    0,388    0,553      0,496    0,523      0,109    0,569     0,537     0
+Weighted Avg.    0,555    0,447    0,555      0,555    0,554      0,109    0,569     0,551     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 934 591 |   a = 1
+ 743 732 |   b = 0
+

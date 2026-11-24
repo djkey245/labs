@@ -1,0 +1,6 @@
+"model","predictors","val_RMSE","chosen"
+"all4","Socioeconomic.Score + Study.Hours + Sleep.Hours + Attendance",3.2226,TRUE
+"no_Socio","Study.Hours + Sleep.Hours + Attendance",5.3616,FALSE
+"no_Attendance","Socioeconomic.Score + Study.Hours + Sleep.Hours",3.6169,FALSE
+"Study_Sleep","Study.Hours + Sleep.Hours",5.692,FALSE
+"Study_only","Study.Hours",5.9137,FALSE

@@ -1,0 +1,5 @@
+"hidden","converged","val_RMSE"
+"c(5,3,2)",TRUE,3.1835
+"c(5,4,2)",TRUE,3.1157
+"c(6,4,2)",TRUE,3.1143
+"c(6,3)",TRUE,3.1316

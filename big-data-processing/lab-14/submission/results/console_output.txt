@@ -1,0 +1,437 @@
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+ПЕРШІ П'ЯТЬ ЗАПИСІВ
+                                                                                                                                    link
+1                                                     https://www.huffpost.com/entry/covid-boosters-uptake-us_n_632d719ee4b087fae6feaac9
+2 https://www.huffpost.com/entry/american-airlines-passenger-banned-flight-attendant-punch-justice-department_n_632e25d3e4b0e247890329fe
+3                                    https://www.huffpost.com/entry/funniest-tweets-cats-dogs-september-17-23_n_632de332e4b0695c1d81dc02
+4                                                    https://www.huffpost.com/entry/funniest-parenting-tweets_l_632d7d15e4b0d12b5403e479
+5                   https://www.huffpost.com/entry/amy-cooper-loses-discrimination-lawsuit-franklin-templeton_n_632c6463e4b09d8701bd227e
+                                                                                   headline
+1              Over 4 Million Americans Roll Up Sleeves For Omicron-Targeted COVID Boosters
+2 American Airlines Flyer Charged, Banned For Life After Punching Flight Attendant On Video
+3                     23 Of The Funniest Tweets About Cats And Dogs This Week (Sept. 17-23)
+4                                  The Funniest Tweets From Parents This Week (Sept. 17-23)
+5             Woman Who Called Cops On Black Bird-Watcher Loses Lawsuit Against Ex-Employer
+   category
+1 U.S. NEWS
+2 U.S. NEWS
+3    COMEDY
+4 PARENTING
+5 U.S. NEWS
+                                                                                                                                                short_description
+1      Health experts said it is too early to predict whether demand would match up with the 171 million doses of the new boosters the U.S. ordered for the fall.
+2 He was subdued by passengers and crew when he fled to the back of the aircraft after the confrontation, according to the U.S. attorney's office in Los Angeles.
+3                                                                                                "Until you have a dog you don't understand what could be eaten."
+4 "Accidentally put grown-up toothpaste on my toddler’s toothbrush and he screamed like I was cleaning his teeth with a Carolina Reaper dipped in Tabasco sauce."
+5    Amy Cooper accused investment firm Franklin Templeton of unfairly firing her and branding her a racist after video of the Central Park encounter went viral.
+               authors       date
+1 Carla K. Johnson, AP 2022-09-23
+2       Mary Papenfuss 2022-09-23
+3        Elyse Wanshel 2022-09-23
+4     Caroline Bologna 2022-09-23
+5       Nina Golgowski 2022-09-22
+
+СТРУКТУРА ДАНИХ
+'data.frame':	209527 obs. of  6 variables:
+ $ link             : chr  "https://www.huffpost.com/entry/covid-boosters-uptake-us_n_632d719ee4b087fae6feaac9" "https://www.huffpost.com/entry/american-airlines-passenger-banned-flight-attendant-punch-justice-department_n_6"| __truncated__ "https://www.huffpost.com/entry/funniest-tweets-cats-dogs-september-17-23_n_632de332e4b0695c1d81dc02" "https://www.huffpost.com/entry/funniest-parenting-tweets_l_632d7d15e4b0d12b5403e479" ...
+ $ headline         : chr  "Over 4 Million Americans Roll Up Sleeves For Omicron-Targeted COVID Boosters" "American Airlines Flyer Charged, Banned For Life After Punching Flight Attendant On Video" "23 Of The Funniest Tweets About Cats And Dogs This Week (Sept. 17-23)" "The Funniest Tweets From Parents This Week (Sept. 17-23)" ...
+ $ category         : chr  "U.S. NEWS" "U.S. NEWS" "COMEDY" "PARENTING" ...
+ $ short_description: chr  "Health experts said it is too early to predict whether demand would match up with the 171 million doses of the "| __truncated__ "He was subdued by passengers and crew when he fled to the back of the aircraft after the confrontation, accordi"| __truncated__ "\"Until you have a dog you don't understand what could be eaten.\"" "\"Accidentally put grown-up toothpaste on my toddler’s toothbrush and he screamed like I was cleaning his teeth"| __truncated__ ...
+ $ authors          : chr  "Carla K. Johnson, AP" "Mary Papenfuss" "Elyse Wanshel" "Caroline Bologna" ...
+ $ date             : chr  "2022-09-23" "2022-09-23" "2022-09-23" "2022-09-23" ...
+
+Кількість записів: 209527 
+Кількість полів: 6 
+ТИПИ ПОЛІВ
+             link          headline          category short_description 
+      "character"       "character"       "character"       "character" 
+          authors              date 
+      "character"       "character" 
+
+ПРОПУЩЕНІ ЗНАЧЕННЯ
+             link          headline          category short_description 
+                0                 0                 0                 0 
+          authors              date 
+                0                 0 
+
+ПОРОЖНІ ТЕКСТОВІ ПОЛЯ
+             link          headline          category short_description 
+                0                 6                 0             19712 
+          authors 
+            37418 
+
+Повністю однакових рядків: 13 
+Warning message:
+closing unused connection 3 (../data/News_Category_Dataset_v3.json) 
+Унікальних категорій: 42 
+
+Період дослідження:
+Від: 2012-01-28 
+До: 2022-09-23 
+Клас поля date: Date 
+СТАТИСТИКА ЗА КАТЕГОРІЯМИ
+       category news_count share_percent
+       POLITICS      35602    16.9916049
+       WELLNESS      17945     8.5645287
+  ENTERTAINMENT      17362     8.2862829
+         TRAVEL       9900     4.7249281
+ STYLE & BEAUTY       9814     4.6838832
+      PARENTING       8791     4.1956407
+ HEALTHY LIVING       6694     3.1948150
+   QUEER VOICES       6347     3.0292039
+   FOOD & DRINK       6340     3.0258630
+       BUSINESS       5992     2.8597746
+         COMEDY       5400     2.5772335
+         SPORTS       5077     2.4230767
+   BLACK VOICES       4583     2.1873076
+  HOME & LIVING       4320     2.0617868
+        PARENTS       3955     1.8875849
+  THE WORLDPOST       3664     1.7487006
+       WEDDINGS       3653     1.7434507
+          WOMEN       3572     1.7047922
+          CRIME       3562     1.7000196
+         IMPACT       3484     1.6627929
+        DIVORCE       3426     1.6351115
+     WORLD NEWS       3299     1.5744988
+          MEDIA       2944     1.4050695
+     WEIRD NEWS       2777     1.3253662
+          GREEN       2622     1.2513900
+      WORLDPOST       2579     1.2308676
+       RELIGION       2577     1.2299131
+          STYLE       2254     1.0757563
+        SCIENCE       2206     1.0528476
+           TECH       2104     1.0041665
+          TASTE       2096     1.0003484
+          MONEY       1756     0.8380781
+           ARTS       1509     0.7201936
+    ENVIRONMENT       1444     0.6891713
+          FIFTY       1401     0.6686489
+      GOOD NEWS       1398     0.6672171
+      U.S. NEWS       1377     0.6571945
+ ARTS & CULTURE       1339     0.6390585
+        COLLEGE       1144     0.5459917
+  LATINO VOICES       1130     0.5393100
+ CULTURE & ARTS       1074     0.5125831
+      EDUCATION       1014     0.4839472
+
+ТОП-10 КАТЕГОРІЙ
+         category news_count share_percent
+1        POLITICS      35602     16.991605
+2        WELLNESS      17945      8.564529
+3   ENTERTAINMENT      17362      8.286283
+4          TRAVEL       9900      4.724928
+5  STYLE & BEAUTY       9814      4.683883
+6       PARENTING       8791      4.195641
+7  HEALTHY LIVING       6694      3.194815
+8    QUEER VOICES       6347      3.029204
+9    FOOD & DRINK       6340      3.025863
+10       BUSINESS       5992      2.859775
+There were 50 or more warnings (use warnings() to see the first 50)
+
+Частка ТОП-10 категорій: 59.56 %
+КІЛЬКІСТЬ НОВИН ЗА РОКАМИ
+ year news_count
+ 2012      31355
+ 2013      34583
+ 2014      32339
+ 2015      32006
+ 2016      32098
+ 2017      29889
+ 2018       9734
+ 2019       2005
+ 2020       2054
+ 2021       2066
+ 2022       1398
+
+Рік із найбільшою кількістю записів:
+  year news_count
+1 2013      34583
+There were 50 or more warnings (use warnings() to see the first 50)
+
+ТОП-6: POLITICS WELLNESS ENTERTAINMENT TRAVEL STYLE & BEAUTY PARENTING 
+There were 50 or more warnings (use warnings() to see the first 50)
+There were 43 warnings (use warnings() to see them)
+
+Категорія-лідер за роками (серед ТОП-6):
+   year category news_count
+1  2012 WELLNESS       7138
+2  2013 WELLNESS       8029
+3  2014 POLITICS       3182
+4  2015 POLITICS       5887
+5  2016 POLITICS       9990
+6  2017 POLITICS      10613
+7  2018 POLITICS       3399
+8  2019 POLITICS        507
+9  2020 POLITICS        802
+10 2021 POLITICS        823
+11 2022 POLITICS        399
+ОПИСОВА СТАТИСТИКА ДОВЖИНИ ТЕКСТІВ
+  Середня_довжина_заголовка Медіана_довжини_заголовка Мінімум_слів_у_заголовку
+1                  58.41535                        60                        0
+  Максимум_слів_у_заголовку Середня_кількість_слів_в_описі
+1                        44                       19.66903
+There were 50 or more warnings (use warnings() to see the first 50)
+ДОВЖИНА ЗАГОЛОВКІВ ЗА КАТЕГОРІЯМИ
+# A tibble: 42 × 4
+   category       кількість середня_довжина медіана_довжини
+   <chr>              <int>           <dbl>           <dbl>
+ 1 U.S. NEWS           1377            68.4              68
+ 2 WORLD NEWS          3299            65.7              66
+ 3 ARTS & CULTURE      1339            65.2              66
+ 4 LATINO VOICES       1130            65.0              67
+ 5 ENTERTAINMENT      17362            64.6              65
+ 6 STYLE & BEAUTY      9814            64.6              65
+ 7 POLITICS           35602            64.3              66
+ 8 BLACK VOICES        4583            64.1              66
+ 9 GOOD NEWS           1398            64                65
+10 CRIME               3562            63.8              64
+11 THE WORLDPOST       3664            63.6              63
+12 SPORTS              5077            62.8              64
+13 MEDIA               2944            62.5              64
+14 QUEER VOICES        6347            62.3              65
+15 HOME & LIVING       4320            61.6              61
+16 SCIENCE             2206            61.0              61
+17 COMEDY              5400            60.8              64
+18 CULTURE & ARTS      1074            60.1              60
+19 ENVIRONMENT         1444            60.1              61
+20 WEIRD NEWS          2777            58.8              60
+21 COLLEGE             1144            58.0              58
+22 TECH                2104            58.0              58
+23 GREEN               2622            57.3              58
+24 STYLE               2254            56.9              58
+25 BUSINESS            5992            55.8              55
+26 MONEY               1756            55.8              53
+27 WEDDINGS            3653            55.7              56
+28 IMPACT              3484            55.7              56
+29 WOMEN               3572            55.6              57
+30 RELIGION            2577            54.7              57
+31 ARTS                1509            54.3              55
+32 PARENTS             3955            54.1              56
+33 DIVORCE             3426            54.0              54
+34 WORLDPOST           2579            53.8              54
+35 EDUCATION           1014            53.7              51
+36 TASTE               2096            53.2              54
+37 HEALTHY LIVING      6694            51.0              51
+38 PARENTING           8791            50.9              50
+39 TRAVEL              9900            49.9              48
+40 WELLNESS           17945            48.4              47
+41 FIFTY               1401            48.1              48
+42 FOOD & DRINK        6340            47.2              46
+There were 50 or more warnings (use warnings() to see the first 50)
+КІЛЬКІСТЬ УНІКАЛЬНИХ ЗНАЧЕНЬ ПОЛЯ АВТОРА: 29166 
+
+ТОП-10 ЗНАЧЕНЬ ПОЛЯ AUTHORS
+        author_name news_count
+1         Lee Moran       2954
+2        Ron Dicker       2219
+3          Ed Mazza       1590
+4    Mary Papenfuss       1566
+5  Reuters, Reuters       1563
+6      Cole Delbyck       1266
+7   Carly Ledbetter       1170
+8    Curtis M. Wong       1146
+9     Andy McDonald       1100
+10       David Moye       1067
+There were 50 or more warnings (use warnings() to see the first 50)
+`geom_smooth()` using formula = 'y ~ x'
+There were 50 or more warnings (use warnings() to see the first 50)
+`geom_smooth()` using formula = 'y ~ x'
+КОРЕЛЯЦІЯ ДОВЖИНИ ТЕКСТІВ
+
+	Pearson's product-moment correlation
+
+data:  news_sample$headline_chars and news_sample$description_chars
+t = -18.045, df = 2998, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.3449233 -0.2803541
+sample estimates:
+       cor 
+-0.3130003 
+
+Розмір вибірки: 3000 
+# A tibble: 12 × 3
+   month news_count month_name
+   <dbl>      <int> <fct>     
+ 1     1      17162 Січ       
+ 2     2      17879 Лют       
+ 3     3      19099 Бер       
+ 4     4      18293 Кві       
+ 5     5      18627 Тра       
+ 6     6      16977 Чер       
+ 7     7      17297 Лип       
+ 8     8      17397 Сер       
+ 9     9      16590 Вер       
+10    10      17221 Жов       
+11    11      16454 Лис       
+12    12      16531 Гру       
+There were 50 or more warnings (use warnings() to see the first 50)
+
+===== САМОСТІЙНЕ 1 =====
+      category news_count share_percent
+        COMEDY       5400      2.577233
+        SPORTS       5077      2.423077
+  BLACK VOICES       4583      2.187308
+ HOME & LIVING       4320      2.061787
+       PARENTS       3955      1.887585
+There were 50 or more warnings (use warnings() to see the first 50)
+
+===== САМОСТІЙНЕ 2 =====
+   year ENTERTAINMENT POLITICS WELLNESS
+1  2012           562        0     7138
+2  2013          1015        0     8029
+3  2014          2122     3182     2660
+4  2015          3923     5887        0
+5  2016          3526     9990        0
+6  2017          3190    10613        0
+7  2018          1862     3399        3
+8  2019           191      507        3
+9  2020           395      802       67
+10 2021           341      823       21
+11 2022           235      399       24
+Роки max/min (2022 неповний):
+       category рік_макс  макс рік_мін мін
+1 ENTERTAINMENT     2015  3923    2019 191
+2      POLITICS     2017 10613    2012   0
+3      WELLNESS     2013  8029    2015   0
+Роки max/min без неповного 2022:
+       category рік_макс  макс рік_мін мін
+1 ENTERTAINMENT     2015  3923    2019 191
+2      POLITICS     2017 10613    2012   0
+3      WELLNESS     2013  8029    2015   0
+There were 44 warnings (use warnings() to see them)
+
+===== САМОСТІЙНЕ 3 =====
+        category кількість середня_слів медіана_слів
+1  ENTERTAINMENT     17362    10.672503           11
+2       POLITICS     35602    10.258834           10
+3 STYLE & BEAUTY      9814    10.440697           10
+4         TRAVEL      9900     8.321818            8
+5       WELLNESS     17945     8.131736            8
+Найбільша медіана: ENTERTAINMENT 
+Найменша медіана: TRAVEL 
+There were 50 or more warnings (use warnings() to see the first 50)
+
+===== САМОСТІЙНЕ 4 =====
+         author_name news_count
+           Lee Moran       2954
+          Ron Dicker       2219
+            Ed Mazza       1590
+      Mary Papenfuss       1566
+    Reuters, Reuters       1563
+        Cole Delbyck       1266
+     Carly Ledbetter       1170
+      Curtis M. Wong       1146
+       Andy McDonald       1100
+          David Moye       1067
+   Julia Brucculieri       1063
+      Nina Golgowski       1052
+        Bill Bradley        997
+         Dana Oliver        936
+ Dominique Mosbergen        935
+Новин без автора: 37418  ( 17.86 % )
+There were 50 or more warnings (use warnings() to see the first 50)
+
+===== САМОСТІЙНЕ 5 =====
+                                  V1
+headline_chars_mean        58.415355
+headline_chars_median      60.000000
+headline_chars_max        320.000000
+headline_words_mean         9.600744
+headline_words_median      10.000000
+headline_words_max         44.000000
+description_chars_mean    114.208670
+description_chars_median  120.000000
+description_chars_max    1472.000000
+description_words_mean     19.669026
+description_words_median   19.000000
+description_words_max     243.000000
+Порожніх описів (0 слів): 19712 
+There were 50 or more warnings (use warnings() to see the first 50)
+Кореляція слів заголовка й опису (повна вибірка, Пірсон):
+
+	Pearson's product-moment correlation
+
+data:  news$headline_words and news$description_words
+t = -103.57, df = 209525, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.2247641 -0.2166175
+sample estimates:
+       cor 
+-0.2206946 
+
+r (слова, повна вибірка) = -0.2207 
+r (символи, повна вибірка) = -0.2362 
+r (слова, лише непорожні описи) = -0.2819  n = 189814 
+
+===== САМОСТІЙНЕ 6 (WELLNESS) =====
+Записів WELLNESS: 17945 
+ year news_count
+ 2012       7138
+ 2013       8029
+ 2014       2660
+ 2015          0
+ 2016          0
+ 2017          0
+ 2018          3
+ 2019          3
+ 2020         67
+ 2021         21
+ 2022         24
+There were 44 warnings (use warnings() to see them)
+Довжина заголовків WELLNESS: середнє символів = 48.37  медіана = 47  середнє слів = 8.13  (усі новини:  58.42 символів )
+  year середня_довжина
+1 2012        48.28734
+2 2013        48.42035
+3 2014        47.92030
+4 2018        68.00000
+5 2019        54.33333
+6 2020        60.49254
+7 2021        59.19048
+8 2022        60.95833
+There were 50 or more warnings (use warnings() to see the first 50)
+ТОП-10 авторських записів у WELLNESS:
+                                                                                            author_name
+1                                                                                      Reuters, Reuters
+2                                                                                        Amanda L. Chan
+3                          Maria Rodale, Contributor | CEO and Chairman of Rodale, Inc. and book author
+4                                                                                           Sarah Klein
+5                            David L. Katz, M.D., M.P.H., Contributor | Founder, True Health Initiative
+6                                                                                      Carolyn Gregoire
+7           Dr. Michael J. Breus, Contributor | Clinical Psychologist; Board Certified Sleep Specialist
+8                                                    Mark Hyman, MD, Contributor | Practicing Physician
+9  Margaret Paul, PhD , Contributor | Best-selling author, seminar leader and co-creator of Inner Bo...
+10                                                                                    Catherine Pearson
+   news_count
+1         642
+2         395
+3         197
+4         168
+5         147
+6         111
+7          96
+8          95
+9          82
+10         68
+WELLNESS без автора: 5000 
+There were 50 or more warnings (use warnings() to see the first 50)
+
+Готово.

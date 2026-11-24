@@ -1,0 +1,12 @@
+[
+  {"name": "Ivan Petrenko", "age": 20, "major": "Computer Science", "gpa": 3.8},
+  {"name": "Olena Ivanenko", "age": 22, "major": "Information Systems", "gpa": 3.5},
+  {"name": "Petro Kovalchuk", "age": 21, "major": "Software Engineering", "gpa": 3.9},
+  {"name": "Andrii Shevchenko", "age": 23, "major": "Data Science", "gpa": 3.7},
+  {"name": "Maria Bondarenko", "age": 19, "major": "Computer Science", "gpa": 3.4},
+  {"name": "Oksana Melnyk", "age": 24, "major": "Information Systems", "gpa": 3.2},
+  {"name": "Dmytro Tkachenko", "age": 21, "major": "Software Engineering", "gpa": 3.6},
+  {"name": "Sofia Kravchenko", "age": 18, "major": "Data Science", "gpa": 4.0},
+  {"name": "Bohdan Lysenko", "age": 22, "major": "Computer Science", "gpa": 3.0},
+  {"name": "Iryna Moroz", "age": 20, "major": "Data Science", "gpa": 3.9}
+]

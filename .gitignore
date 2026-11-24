@@ -5,8 +5,19 @@
 .claude/
 CLAUDE.md
 
-# Предмети, яких ще немає в репозиторії
-big-data-processing/
+# --- big-data-processing ---
+# віртуальне середовище Python
+big-data-processing/.venv/
+# завантажені матеріали викладача (методички, датасети, вкладення Moodle)
+big-data-processing/_moodle/
+big-data-processing/data/
+big-data-processing/lab-*/*.pdf
+big-data-processing/lab-*/task.txt
+# сирі дані (до 383 МБ) — завантажуються за інструкцією в submission/data/README.txt
+big-data-processing/lab-*/data/
+# допоміжні скрипти та робочі файли (не здаються)
+big-data-processing/lab-*/src/
+big-data-processing/lab-03/.mongo-data/
 
 # --- vr-ar-technologies ---
 # ліцензійний ключ Vuforia

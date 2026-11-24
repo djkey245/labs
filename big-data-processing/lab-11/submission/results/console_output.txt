@@ -1,0 +1,217 @@
+  Socioeconomic.Score Study.Hours Sleep.Hours Attendance   Grades
+1            78.60961  2.15296692    9.259058   63.66983 69.51789
+2            58.06091  2.90236574    8.704761   91.73744 82.27037
+3            61.13727  4.04070200    9.333074   75.69757 72.24043
+4            59.87458  5.58562645    8.856603   54.76019 72.79154
+5            82.42276  0.05813565    9.670438   67.88362 64.10796
+6            60.34017  1.87961830    5.304377   70.57191 70.05389
+ Socioeconomic.Score  Study.Hours       Sleep.Hours       Attendance   
+ Min.   :20.14       Min.   :0.01309   Min.   : 4.001   Min.   :50.05  
+ 1st Qu.:40.17       1st Qu.:2.02249   1st Qu.: 5.428   1st Qu.:63.06  
+ Median :60.41       Median :3.93287   Median : 6.904   Median :76.00  
+ Mean   :60.49       Mean   :3.96081   Mean   : 6.935   Mean   :75.24  
+ 3rd Qu.:80.37       3rd Qu.:5.91323   3rd Qu.: 8.454   3rd Qu.:87.18  
+ Max.   :99.96       Max.   :7.99711   Max.   :10.000   Max.   :99.98  
+     Grades     
+ Min.   :47.15  
+ 1st Qu.:64.85  
+ Median :70.27  
+ Mean   :70.04  
+ 3rd Qu.:75.63  
+ Max.   :89.11  
+'data.frame':	1388 obs. of  5 variables:
+ $ Socioeconomic.Score: num  78.6 58.1 61.1 59.9 82.4 ...
+ $ Study.Hours        : num  2.153 2.9024 4.0407 5.5856 0.0581 ...
+ $ Sleep.Hours        : num  9.26 8.7 9.33 8.86 9.67 ...
+ $ Attendance         : num  63.7 91.7 75.7 54.8 67.9 ...
+ $ Grades             : num  69.5 82.3 72.2 72.8 64.1 ...
+             Grades Socioeconomic.Score         Study.Hours         Sleep.Hours 
+                  0                   0                   0                   0 
+         Attendance 
+                  0 
+Спостережень після complete.cases: 1388 
+Grades == 0: 0 ; Grades == 100: 0 
+train_n  test_n 
+   1110     278 
+     Grades      Socioeconomic.Score  Study.Hours       Sleep.Hours    
+ Min.   :47.15   Min.   :20.14       Min.   :0.01309   Min.   : 4.001  
+ 1st Qu.:65.12   1st Qu.:40.05       1st Qu.:2.06357   1st Qu.: 5.438  
+ Median :70.35   Median :60.28       Median :3.92096   Median : 6.901  
+ Mean   :70.07   Mean   :60.66       Mean   :3.96767   Mean   : 6.938  
+ 3rd Qu.:75.53   3rd Qu.:81.11       3rd Qu.:5.84320   3rd Qu.: 8.448  
+ Max.   :89.11   Max.   :99.96       Max.   :7.99711   Max.   :10.000  
+   Attendance   
+ Min.   :50.05  
+ 1st Qu.:63.29  
+ Median :76.00  
+ Mean   :75.30  
+ 3rd Qu.:87.45  
+ Max.   :99.98  
+sd Grades (train): 7.537839 
+                    Grades Socioeconomic.Score Study.Hours Sleep.Hours
+Grades               1.000               0.566       0.618       0.220
+Socioeconomic.Score  0.566               1.000      -0.026       0.018
+Study.Hours          0.618              -0.026       1.000      -0.022
+Sleep.Hours          0.220               0.018      -0.022       1.000
+Attendance           0.217               0.022      -0.020      -0.033
+                    Attendance
+Grades                   0.217
+Socioeconomic.Score      0.022
+Study.Hours             -0.020
+Sleep.Hours             -0.033
+Attendance               1.000
+null device 
+          1 
+null device 
+          1 
+
+Call:
+lm(formula = formula_model, data = train_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8.7385 -2.1736  0.0552  2.2465 11.1786 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         34.327261   0.722948   47.48   <2e-16 ***
+Socioeconomic.Score  0.185808   0.004116   45.14   <2e-16 ***
+Study.Hours          2.117836   0.041882   50.57   <2e-16 ***
+Sleep.Hours          1.014048   0.055846   18.16   <2e-16 ***
+Attendance           0.119935   0.006779   17.69   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.189 on 1105 degrees of freedom
+Multiple R-squared:  0.8217,	Adjusted R-squared:  0.821 
+F-statistic:  1273 on 4 and 1105 DF,  p-value: < 2.2e-16
+
+     actual predicted_lm
+3  72.24043     72.78756
+14 64.85032     66.59124
+15 63.38071     64.71473
+21 76.28639     70.23069
+22 82.35158     77.94724
+27 79.38364     77.20350
+[1] TRUE
+[1] TRUE
+     Grades       Socioeconomic.Score  Study.Hours      Sleep.Hours    
+ Min.   :0.0000   Min.   :0.0000      Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.4282   1st Qu.:0.2494      1st Qu.:0.2568   1st Qu.:0.2395  
+ Median :0.5529   Median :0.5029      Median :0.4895   Median :0.4833  
+ Mean   :0.5461   Mean   :0.5076      Mean   :0.4953   Mean   :0.4896  
+ 3rd Qu.:0.6763   3rd Qu.:0.7639      3rd Qu.:0.7302   3rd Qu.:0.7413  
+ Max.   :1.0000   Max.   :1.0000      Max.   :1.0000   Max.   :1.0000  
+   Attendance    
+ Min.   :0.0000  
+ 1st Qu.:0.2652  
+ Median :0.5198  
+ Mean   :0.5056  
+ 3rd Qu.:0.7491  
+ Max.   :1.0000  
+     Grades        Socioeconomic.Score  Study.Hours        Sleep.Hours       
+ Min.   :0.09986   Min.   :0.001015    Min.   :0.000541   Min.   :0.0007493  
+ 1st Qu.:0.40234   1st Qu.:0.264394    1st Qu.:0.217824   1st Qu.:0.2196588  
+ Median :0.54307   Median :0.508915    Median :0.498381   Median :0.4933237  
+ Mean   :0.54270   Mean   :0.497157    Mean   :0.491020   Mean   :0.4873842  
+ 3rd Qu.:0.69114   3rd Qu.:0.731556    3rd Qu.:0.748325   3rd Qu.:0.7448408  
+ Max.   :0.96419   Max.   :0.999726    Max.   :0.996782   Max.   :0.9997195  
+   Attendance     
+ Min.   :0.01309  
+ 1st Qu.:0.24453  
+ Median :0.51837  
+ Mean   :0.50049  
+ 3rd Qu.:0.73348  
+ Max.   :0.99942  
+hidden: 6, 4, 2    thresh: 0.01    rep: 1/1    steps:    3910	error: 2.7374 	time: 0.97 secs
+Час навчання NN (c(6,4,2)), с: 1 
+                               [,1]
+error                  2.737396e+00
+reached.threshold      9.199183e-03
+steps                  3.910000e+03
+Intercept.to.1layhid1 -4.489988e+00
+Збіжність: error = 2.737396 ; reached.threshold = 0.009199183 ; steps = 3910 
+null device 
+          1 
+    actual  pred_lm  pred_nn
+1 72.24043 72.78756 74.33505
+2 64.85032 66.59124 65.93237
+3 63.38071 64.71473 64.94938
+4 76.28639 70.23069 71.38992
+5 82.35158 77.94724 79.10695
+6 79.38364 77.20350 78.51224
+                   MSE   RMSE    MAE R2_test
+Mean_baseline  58.0747 7.6207 6.2960 -0.0003
+Linear_model   10.3667 3.2197 2.6262  0.8214
+Neural_network  9.5153 3.0847 2.4542  0.8361
+null device 
+          1 
+Залишки: mean lm = 0.1298732 ; mean nn = 0.2066977 ; sd lm = 3.222916 ; sd nn = 3.083305 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+Shapiro-Wilk залишків lm (train):
+
+	Shapiro-Wilk normality test
+
+data:  residuals(model_lm)
+W = 0.99837, p-value = 0.378
+
+
+===== Крок 11 / Самост. 5: архітектури (один поділ, seed NN = 456) =====
+  seed   hidden converged steps time_s    MSE   RMSE    MAE R2_test
+1  456 c(5,3,2)      TRUE  1562    0.3 9.7364 3.1203 2.4913  0.8323
+2  456 c(5,4,2)      TRUE  2769    0.6 9.3612 3.0596 2.4478  0.8388
+3  456 c(6,4,2)      TRUE  3910    1.0 9.5153 3.0847 2.4542  0.8361
+4  456   c(6,3)      TRUE  1051    0.2 9.4474 3.0737 2.4426  0.8373
+
+--- Добір архітектури на валідації (train -> train' 80% / val 20%, тест не використовується) ---
+train' = 888 ; val = 222 
+    hidden converged val_RMSE
+1 c(5,3,2)      TRUE   3.1835
+2 c(5,4,2)      TRUE   3.1157
+3 c(6,4,2)      TRUE   3.1143
+4   c(6,3)      TRUE   3.1316
+Обрана за валідацією архітектура: c(6,4,2) 
+Фінальна тестова оцінка обраної архітектури (один раз):
+    MSE    RMSE     MAE R2_test 
+ 9.5153  3.0847  2.4542  0.8361 
+
+===== Самост. 6: повторні поділи =====
+  split_seed RMSE_baseline RMSE_lm RMSE_nn nn_converged nn_time_s nn_better
+1        123        7.6207  3.2197  3.0847         TRUE       1.0      TRUE
+2          1        7.4052  3.2856  3.0007         TRUE       1.0      TRUE
+3         42        7.6120  3.2782  3.0794         TRUE       1.1      TRUE
+4       2024        7.7168  3.2792  3.0120         TRUE       1.0      TRUE
+5        777        8.0703  3.1788  2.9990         TRUE       0.7      TRUE
+6      31415        7.2842  3.1061  3.1370         TRUE       0.7     FALSE
+7          9        7.6239  3.2858  3.0089         TRUE       0.9      TRUE
+lm: mean RMSE = 3.2333, sd = 0.0695
+nn (збіглись 7 з 7): mean RMSE = 3.0460, sd = 0.0543
+NN краща за lm у 6 з 7 поділів
+null device 
+          1 
+
+===== Самост. 9: підмножини предикторів (вибір на валідації) =====
+          model                                                   predictors
+1          all4 Socioeconomic.Score + Study.Hours + Sleep.Hours + Attendance
+2      no_Socio                       Study.Hours + Sleep.Hours + Attendance
+3 no_Attendance              Socioeconomic.Score + Study.Hours + Sleep.Hours
+4   Study_Sleep                                    Study.Hours + Sleep.Hours
+5    Study_only                                                  Study.Hours
+  val_RMSE chosen
+1   3.2226   TRUE
+2   5.3616  FALSE
+3   3.6169  FALSE
+4   5.6920  FALSE
+5   5.9137  FALSE
+Обрано за валідацією: all4 
+Фінальна тестова оцінка обраної моделі (один раз):
+    MSE    RMSE     MAE R2_test 
+10.3667  3.2197  2.6262  0.8214 
+Для довідки: lm all4 на тесті RMSE = 3.2197 
+
+Готово.
